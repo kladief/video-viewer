@@ -1,0 +1,47 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe сборка активного файла",
+            "command": "C:\\Program Files\\msys2\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-municode",
+                "-fdiagnostics-color=always",
+                "-g",
+                "main.cpp",
+                "conslEngine.cpp",
+                "-Lmingw/lib",
+                "-Iinclude",
+                "-llibopencv_calib3d452",
+                "-llibopencv_core452",
+                "-llibopencv_dnn452",
+                "-llibopencv_features2d452",
+                "-llibopencv_flann452",
+                "-llibopencv_gapi452",
+                "-llibopencv_highgui452",
+                "-llibopencv_imgcodecs452",
+                "-llibopencv_imgproc452",
+                "-llibopencv_ml452",
+                "-llibopencv_objdetect452",
+                "-llibopencv_photo452",
+                "-llibopencv_stitching452",
+                "-llibopencv_video452",
+                "-llibopencv_videoio452",
+                "-o",
+                "run.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Задача создана отладчиком."
+        }
+    ],
+    "version": "2.0.0"
+}
